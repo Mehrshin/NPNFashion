@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NPN Fashion</title>
+    <link rel="stylesheet" href="Styles/base.css">
+    <link rel="stylesheet" href="Styles/npnfashion.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <!-- Begin container-->
+    <div id="container">
+        <!-- Begin Header Section-->
+        <header id="header">
+            <a href="npnfashion.html"><img src="images/NPN_Logo.png" alt="NPN Fashion Logo" width="50" height="50"></a>
+            <h1 class="center-align"><a href="npnfashion.html">NPN Fashion</a></h1>
+        </header>
+        <!-- End Header Section-->
+        <!-- Begin Nav Section-->
+        <nav id="nav">
+            <ul>
+                <li><a href="men_page.html">Men</a></li>
+                <li><a href="women_page.html">Women</a></li>
+                <li><a href="Kids_page.html">Kids</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Shopping Cart</a></li>
+                <li><a href="Contactus.html">Contact Us</a></li>
+
+
+            </ul>
+        </nav>
+        <hr>
+        <!-- End nav Section-->
+        <!-- Begin Left-sidebar Section-->
+        <aside id="leftsidebar">
+            <h3>Follow us on:</h3>
+            <div id="social_networks">
+                <a href="instagram.com"><img src="images/instagram.png" alt="NPN Instagram Account" height="40"
+                        width="40"></a>
+                <a href="facebook.com"><img src="images/facebook.png" alt="NPN Facebook Account" height="40"
+                        width="40"></a>
+                <a href="twitter.com"><img src="images/twitter.png" alt="NPN Twitter Account" height="40"
+                        width="40"></a>
+            </div>
+            <form>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="subscription">Don't miss our offers</label>
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="subscription" type="email" size="15" maxlength="30"
+                                placeholder="Type your email here"
+                                pattern="	
+                    ^(([A-Za-z0-9]+_+)|([A-Za-z0-9]+\-+)|([A-Za-z0-9]+\.+)|([A-Za-z0-9]+\++))*[A-Za-z0-9]+@((\w+\-+)|(\w+\.))*\w{1,63}\.[a-zA-Z]{2,6}$">
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="Subscribe">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <br>
+            <h4>Testimonials</h4>
+            <div class="testimonial">
+                <img src="images/avatar.png" alt="Avatar" style="width:40px">
+                <p><span>John Smith</span></p>
+                <p> I love this sweater! It is so pretty and stylish with shorts and jeans.</p>
+            </div>
+
+            <div class="testimonial">
+                <img src="images/avatar2.png" alt="Avatar" style="width:40px">
+                <p><span>Jane Brown</span></p>
+                <p>I found this website while looking to purchase some plain t-shirts. I have since used them a couple
+                    more times. Their prices are great, the quality has been great.</p>
+            </div>
+        </aside>
+        <!-- End Left-sidebar Section-->
+        <!-- Begin main Section-->
+        <main id="main">
+            <table>
+                <tr>
+                    <td><a href="men_page.html"><img src="images/men.jpg" alt="Men clothing">
+                            Men</a> </td>
+                    <td><a href="women_page.html"><img src="images/women.jpg" alt="Women clothing">Women</a></td>
+                    <td><a href="Kids_page.html"><img src="images/kids.jpg" alt="Kids clothing">Kids</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#"><img src="images/offer.jpg" alt="Offers">
+                            Offers</a> </td>
+                    <td><a href="#"><img src="images/new_release.jpg" alt="New releases">New Releases</a></td>
+                    <td><a href="#"><img src="images/best_Sellers.avif" alt="Best Sellers">Best Sellers</a></td>
+                </tr>
+
+            </table>
+        </main>
+        <!-- End main Section-->
+
+        <!-- Begin right-sidebar Section-->
+        <aside id="rightsidebar">
+            <form>
+                <table>
+                    <tr>
+                        <td>
+                            <fieldset id="fieldset">
+                                <legend>Fabric Chooser</legend>
+                                <select name="fabric" id="fabric">
+                                    <option value="cotton">Cotton</option>
+                                    <option value="leather">Leather</option>
+                                    <option value="linen">Linen</option>
+                                    <option value="polyester">Polyester</option>
+                                    <option value="silk">Silk</option>
+                                    <option value="velvet">Velvet</option>
+                                    <option value="cashmere">Cashmere</option>
+                                    <option value="chiffon">Chiffon</option>
+                                    <option value="crepe">Crêpe</option>
+                                </select>
+                                <script>
+                                    function show_discription(fabric) {
+                                        var discription = '';
+                                        if (fabric.value == 'cotton') {
+                                            discription = " Cotton is a staple fiber, which means it is composed of different, varying lengths of fibers. Cotton is made from the natural fibers of cotton plants. Cotton is primarily composed of cellulose, an insoluble organic compound crucial to plant structure, and is a soft and fluffy material."
+                                        }
+                                        else if (fabric.value == 'leather') {
+                                            discription = " Leather is any fabric that is made from animal hides or skins, and different leathers result from different types of animals and different treatment techniques. While cowhide is the most popular animal skin used for leather, comprising about 65 percent of all leather produced, almost any animal can be made into leather, from crocodiles to pigs to stingrays."
+                                        }
+                                        else if (fabric.value == 'linen') {
+                                            discription = "Linen is an extremely strong, lightweight fabric made from the flax plant. Linen is a common material used for towels, tablecloths, napkins, and bedsheets, and the term “linens,” i.e. bed linens, still refers to these household items, though they are not always made out of linen fabric."
+                                        }
+                                        else if (fabric.value == 'polyester') {
+                                            discription = " Polyester is a man-made synthetic fiber created from petrochemicals, like coal and petroleum. Polyester fabric is characterized by its durable nature; however it is not breathable and doesn’t absorb liquids, like sweat, well."
+                                        }
+                                        else if (fabric.value == 'silk') {
+                                            discription = " Silk is a natural fiber produced by the silk worm, an insect, as a material for their nests and cocoons. Silk is known for its shine and softness as a material. It is an incredibly durable and strong material with a beautiful drape and sheen. Silk is used for formal attire, accessories, bedding, upholstery, and more."
+                                        }
+                                        else if (fabric.value == 'velvet') {
+                                            discription = "Velvet is a soft, luxurious fabric that is characterized by a dense pile of evenly cut fibers that have a smooth nap. Velvet has a beautiful drape and a unique soft and shiny appearance due to the characteristics of the short pile fibers. Velvet fabric is popular for evening wear and dresses for special occasions, as the fabric was initially made from silk."
+                                        }
+                                        else if (fabric.value == 'cashmere') {
+                                            discription = "Cashmere is a type of wool fabric that is made from cashmere goats and pashmina goats. Cashmere is a natural fiber known for its extremely soft feel and great insulation. The fibers are very fine and delicate, feeling almost like a silk fabric to the touch. Cashmere is significantly warmer and lighter than sheep’s wool."
+                                        }
+                                        else if (fabric.value == 'chiffon') {
+                                            discription = "Chiffon a lightweight, plain-woven fabric with a slight shine. Chiffon has small puckers that make the fabric a little rough to the touch. These puckers are created through the use of s-twist and z-twist crepe yarns, which are twisted counter-clockwise and clockwise respectively. Crepe yarns are also twisted much tighter than standard yarns."
+                                        }
+                                        else if (fabric.value == 'crepe') {
+                                            discription = " Crêpe is a silk, wool, or synthetic fabric with a distinctive wrinkled and bumpy appearance. Crêpe is usually a light-to- medium-weight fabric. Crêpe fabric can be used to make clothes, like dresses, suits, blouses, pants, and more. Crêpe is also popular in home decor for items like curtains, window treatments, and pillows."
+                                        }
+                                        document.getElementById('fabric_description').innerHTML = discription;
+                                    }
+                                </script>
+
+                                <input type="button" value="Choose" onclick="show_discription(fabric)">
+                                <br>
+                                <p id="fabric_description"></p>
+                            </fieldset>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </aside>
+        <!-- End right-sidebar Section-->
+        <!-- Begin Footer Section-->
+        <footer id="footer">
+            <table>
+                <tr>
+                    <td>
+                        <a href="npnfashion.html"><img src="images/NPN_Logo.png" alt="NPN Logo"> </a>
+                        <p>&copy;2023 NPN Fashion. All Rights Reserved.</p>
+                    </td>
+                    <td>
+                        <h2>Shop</h2>
+                        <a href="men_page.html">
+                            <h4>Men</h4>
+                        </a>
+                        <a href="women_page.html">
+                            <h4>Women</h4>
+                        </a>
+                        <a href="Kids_page.html">
+                            <h4>Kids</h4>
+                        </a>
+                    </td>
+                    <td>
+                        <h2>Support</h2>
+                        <a href="FAQ.html">
+                            <h4>FAQ</h4>
+                        </a>
+                        <a href="Contactus.html">
+                            <h4>Contact Us</h4>
+                        </a>
+                    </td>
+                    <td>
+                        <h2>Follow Us</h2>
+                        <a href="#">
+                            <h4>Facebook</h4>
+                        </a>
+                        <a href="#">
+                            <h4>Instagram</h4>
+                        </a>
+                        <a href="#">
+                            <h4>Twitter</h4>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </footer>
+        <!-- End Footer Section-->
+
+    </div>
+    <!-- End Container-->
+
+</body>
+
+</html>

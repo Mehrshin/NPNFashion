@@ -1,0 +1,335 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header a:link {
+    text-decoration: none;
+    color: white;
+}
+
+header a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+header img {
+    border-radius: 10%;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    background-color: #2c3531;
+}
+
+#container {
+    width: 960px;
+    height: 680px;
+    /* order for the box model: margin, border, padding.
+    side order: TRBL */
+    margin: 0 auto;
+    /* border: thickness, style, color */
+    border: 5px solid black;
+    background-color: rgb(219, 219, 219);
+}
+
+#container header img {
+    float: left
+}
+
+#logo {
+    width: 940px;
+    /* order for the box model: margin, border, padding.
+    side order: TRBL */
+    margin: 0 auto;
+    /*border: thickness, style, color*/
+    border: 2px solid black;
+}
+
+#header {
+    width: 940px;
+    margin: 0 0 5px 0;
+    padding: 10px;
+    background-color: #116446;
+    height: 50px;
+}
+
+
+#nav {
+    width: 940px;
+    margin: 0 0 10px 0;
+    padding: 10px;
+    /*background-color: lightgreen;*/
+    height: 25px;
+    text-align: center;
+
+}
+
+
+#nav ul li {
+    list-style-type: none;
+    display: inline;
+    vertical-align: middle;
+
+}
+
+#nav ul li a {
+    margin: 20px;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+#nav ul li a:link {
+    text-decoration: none;
+    color: blue;
+    background-color: rgb(173, 238, 176);
+}
+
+#leftsidebar {
+    width: 150px;
+    margin: 0 10px 10px 0;
+    padding: 10px;
+    /*background-color: rgb(173, 238, 176);*/
+    height: 400px;
+    float: left;
+}
+
+#leftsidebar h3 {
+    margin: 0 0 4px 0;
+}
+
+#social_networks a img {
+    border-radius: 20%;
+}
+
+#leftsidebar form {
+    /* border: 2px solid black;
+    border-radius: 10px;
+    padding: 2px;
+    margin: 10px 0 0 0; */
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px 0 0 0;
+    font-size: 8px;
+}
+
+#leftsidebar label {
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+#leftsidebar form input {
+    margin-top: 5px;
+}
+
+.leftsidebarimg {
+    width: 150px;
+}
+
+.testimonial {
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px 0;
+    font-size: 10px;
+}
+
+.testimonial img {
+    float: left;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.testimonial span {
+    font-size: 15px;
+    margin-right: 2px;
+}
+
+.testimonial p {
+    margin-top: 8px;
+    text-align: justify;
+}
+
+#leftsidedetail {
+    width: 300px;
+    margin: 0 10px 10px 0;
+    padding: 10px;
+    /*background-color: rgb(173, 238, 176);*/
+    height: 400px;
+    float: left;
+}
+
+#leftsidedetail img {
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+#size {
+    width: 210px;
+    margin-top: 10px;
+}
+
+#leftsidedetail input {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    width: 300px;
+}
+
+#main {
+    width: 570px;
+    margin: 0 0 10px 0;
+    padding: 10px;
+    /*background-color: rgb(163, 206, 160);*/
+    height: 400px;
+    float: left;
+}
+
+#main table tr td img {
+    width: 160px;
+    height: 160px;
+    margin: 5px;
+    border-radius: 10%;
+}
+
+#main table tr td {
+    text-align: center;
+}
+
+#main table tr td a:link {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#fieldset {
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 2px 0;
+    font-size: 12px;
+
+}
+
+#detail_main {
+    width: 420px;
+    margin: 0 0 10px 0;
+    padding: 10px;
+    /*background-color: rgb(163, 206, 160);*/
+    height: 400px;
+    float: left;
+}
+
+#detail_main p,
+h2 {
+    margin: 10px 0 10px 0;
+}
+
+#rightsidebar {
+    width: 150px;
+    margin: 0 10px 10px 0;
+    padding: 10px;
+    /*background-color:rgb(173, 238, 176);*/
+    height: 400px;
+    float: right;
+    font-size: 12PX;
+}
+
+#rightsidebar form table tr td {
+    width: max-content;
+    height: auto;
+}
+
+#rightsidebar img {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    ;
+}
+
+#footer {
+    width: 940px;
+    padding: 10px;
+    background-color: rgb(156, 198, 156);
+    height: 100px;
+    clear: both;
+}
+
+#footer img {
+    border-radius: 10%;
+}
+
+#footer h2 {
+    margin-bottom: 10px;
+}
+
+#footer a:link {
+    text-decoration: none;
+}
+
+#footer table td {
+    width: 240px;
+    padding-left: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    vertical-align: top;
+}
+
+#footer img {
+    height: 50px;
+    width: 50px;
+}
+
+.content {
+    min-height: 100%;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    /* Add styling properties like background color, text color, etc. */
+}
+
+.FAQsidebar h2 {
+    padding: 0;
+}
+
+.FAQsidebar {
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 10px 0 0 30px;
+    margin: 20px 0px 0 20px;
+    font-size: 100%;
+    line-height: 30px;
+}
+
+#FAQbody {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    margin: 10px;
+}
+
+#contactsidebar {
+    width: 15px;
+    margin: 0;
+    padding: 10px;
+    /*background-color: rgb(173, 238, 176);*/
+    height: 400px;
+    float: left;
+}
+
+#FAQbody div {
+    margin-left: 30px;
+}
